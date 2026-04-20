@@ -2,64 +2,68 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Woolland Handicraft</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Woolland Handicraft</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-body {margin:0;font-family:Poppins;background:#fff;color:#333;}
+body {margin:0;font-family:Poppins;background:#f9f9f9;color:#333;}
 
 header {
-display:flex;justify-content:space-between;
-padding:15px 30px;background:#fff;
-border-bottom:1px solid #eee;
-position:sticky;top:0;
+display:flex;justify-content:space-between;align-items:center;
+padding:20px 40px;background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
+header h2 {margin:0;}
+
 .hero {
-height:80vh;
+height:90vh;
 background:url('https://images.unsplash.com/photo-1602524203737-7c1c6f8265df') center/cover;
 display:flex;align-items:center;justify-content:center;
 color:white;text-align:center;
 }
 
-.hero h1 {font-size:45px;margin:0;}
-.hero p {font-size:18px;}
+.hero h1 {font-size:50px;margin:0;}
+.hero p {font-size:20px;margin:10px 0;}
 
 .btn {
-padding:12px 20px;background:black;color:white;
-text-decoration:none;border-radius:5px;
-display:inline-block;margin-top:10px;
+padding:12px 25px;background:black;color:white;
+text-decoration:none;border-radius:25px;
+display:inline-block;margin-top:15px;
 }
 
-section {padding:60px 20px;text-align:center;}
+section {padding:70px 30px;text-align:center;}
 
 .products {
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:30px;
 }
 
 .card {
-background:#fff;border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-overflow:hidden;transition:0.3s;
-padding-bottom:15px;
+background:white;border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+overflow:hidden;
+transition:0.3s;
 }
 
-.card:hover {transform:translateY(-5px);}
+.card:hover {transform:translateY(-8px);}
 
 .card img {
-width:100%;height:250px;object-fit:cover;
+width:100%;height:220px;object-fit:cover;
 }
 
-.card h3 {margin:10px;}
+.card-content {
+padding:20px;text-align:left;
+}
 
-.card p {
-padding:0 15px;
-font-size:14px;
-text-align:left;
+.card-content h3 {margin:0 0 10px;}
+
+.card-content p {
+font-size:14px;line-height:1.6;
 }
 
 .about {
@@ -68,7 +72,8 @@ max-width:800px;margin:auto;
 
 footer {
 background:#111;color:white;
-padding:20px;text-align:center;
+padding:25px;text-align:center;
+margin-top:40px;
 }
 </style>
 </head>
@@ -77,13 +82,14 @@ padding:20px;text-align:center;
 
 <header>
 <h2>Woolland Handicraft</h2>
+<a class="btn" href="https://wa.me/9779808877784">Contact</a>
 </header>
 
 <div class="hero">
 <div>
-<h1>Premium Felt Products</h1>
-<p>Handmade in Nepal • Wholesale & Custom Orders</p>
-<a class="btn" href="https://wa.me/9779808877784">Contact Us</a>
+<h1>Handmade Felt Products</h1>
+<p>Premium Quality • Custom Design • Worldwide Export</p>
+<a class="btn" href="https://wa.me/9779808877784">Order Now</a>
 </div>
 </div>
 
@@ -92,56 +98,49 @@ padding:20px;text-align:center;
 
 <div class="products">
 
+<!-- PRODUCT 1 -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1616627982830-8f1b7a5b6f3a">
+<div class="card-content">
 <h3>Felt Balls</h3>
 <p>
 Material: 100% Wool<br>
-Size: 2cm–5cm<br>
+Size: Custom<br>
 Use: Decoration / DIY<br>
-Custom: Available<br>
 MOQ: 100 pcs
 </p>
-<a class="btn" href="https://wa.me/9779808877784">Order Now</a>
+<a class="btn" href="https://wa.me/9779808877784">Order</a>
+</div>
 </div>
 
+<!-- PRODUCT 2 -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8">
+<div class="card-content">
 <h3>Cat Cave</h3>
 <p>
 Material: Thick Felt Wool<br>
-Type: Handmade<br>
+Handmade Product<br>
 Use: Pet House<br>
-Custom: Available<br>
 MOQ: 50 pcs
 </p>
-<a class="btn" href="https://wa.me/9779808877784">Order Now</a>
+<a class="btn" href="https://wa.me/9779808877784">Order</a>
+</div>
 </div>
 
+<!-- PRODUCT 3 -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1603052875309-b5d8f1f3c8d2">
+<div class="card-content">
 <h3>Dryer Balls</h3>
 <p>
 Material: Organic Wool<br>
-Use: Laundry<br>
-Eco-Friendly: Yes<br>
-Custom: Available<br>
+Eco-Friendly<br>
+Laundry Use<br>
 MOQ: 200 pcs
 </p>
-<a class="btn" href="https://wa.me/9779808877784">Order Now</a>
+<a class="btn" href="https://wa.me/9779808877784">Order</a>
 </div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1582738411706-bfc8e69d9a0c">
-<h3>Toys & Decor</h3>
-<p>
-Material: Felt Wool<br>
-Type: Handmade<br>
-Use: Kids / Home Decor<br>
-Custom: Available<br>
-MOQ: 50 pcs
-</p>
-<a class="btn" href="https://wa.me/9779808877784">Order Now</a>
 </div>
 
 </div>
@@ -150,19 +149,9 @@ MOQ: 50 pcs
 <section class="about">
 <h2>About Us</h2>
 <p>
-Woolland Handicraft is a Nepal-based manufacturer of handmade felt products. 
-We specialize in high-quality wool items including toys, home decor, slippers, bags, and pet products. 
-We provide custom designs and bulk wholesale services for international buyers.
-</p>
-</section>
-
-<section>
-<h2>Why Choose Us</h2>
-<p>
-✔ Handmade by skilled artisans<br>
-✔ Eco-friendly wool<br>
-✔ Custom design support<br>
-✔ Worldwide export
+Woolland Handicraft is a Nepal-based manufacturer of handmade felt products.
+We specialize in high-quality wool items including toys, home decor, slippers, bags, and pet products.
+We provide custom designs and wholesale services worldwide.
 </p>
 </section>
 
